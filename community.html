@@ -1,13 +1,12 @@
 <!DOCTYPE HTML>
-<!DOCTYPE HTML>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Community - Game Website Template</title>
-  <link rel="stylesheet" href="css/style.css"
- type="text/css">
 </head>
-<body>
+<body link="red">
+<meta charset="UTF-8">
+<title>Community - Game Website Template</title>
+<link rel="stylesheet" href="css/style.css"
+ type="text/css">
 <div id="background">
 <div id="header">
 <div>
@@ -41,23 +40,62 @@ Board</a> </li>
 Top 10 leaders!</span> </p>
     <p> </p>
     <ul style="list-style-type: circle;">
-      <li>UserOne - 54321</li>
-      <li>UserTwo - 4321</li>
-      <li>UserThree - 321</li>
+      <li><a href="userOne.html">UserOne - 54321</a></li>
+      <li><a href="userTwo.html">UserTwo - 4321</a></li>
+      <li><a href="userThree.html">UserThree - 321</a></li>
     </ul>
     </div>
   </li>
   <li>
     <h3>Featured live streams!</h3>
-    <div> Click on a link to view a users page and
+    <div id="BODY"> Click on a link to view a users page
+and
 stream.
     <p> </p>
-    <p> <a href="user54321.html">UserFour
-    </a> is streaming CURRENT_GAME.<br>
-    <a href="user4321.html">UserFive
-    </a> is streaming CURRENT_GAME.<br>
-    <a href="user4321.html">UserSix
-    </a> is streaming CURRENT_GAME.<br>
+    <p> <a href="userFour.html">UserFour
+    </a> is streaming <img id="myImage"
+ onclick="changeImage()" src="images/pic_bulboff.gif"
+ height="50" width="50">
+    <script>
+function changeImage() {
+var image = document.getElementById('myImage');
+if (image.src.match("bulbon")) {
+image.src = "images/pic_bulboff.gif";
+} else {
+image.src = "images/pic_bulbon.gif";
+}
+}
+    </script><br>
+    <a href="userFive.html">UserFive
+    </a> is streaming <img id="myImage"
+ onclick="changeImage()" src="images/pic_bulboff.gif"
+ height="50" width="50">
+    <script>
+function changeImage() {
+var image = document.getElementById('myImage');
+if (image.src.match("bulbon")) {
+image.src = "images/pic_bulboff.gif";
+} else {
+image.src = "images/pic_bulbon.gif";
+}
+}
+    </script><br>
+    <br>
+    <a href="userSix.html">UserSix
+    </a> is streaming <img id="myImage"
+ onclick="changeImage()" src="images/pic_bulboff.gif"
+ height="50" width="50">
+    <script>
+function changeImage() {
+var image = document.getElementById('myImage');
+if (image.src.match("bulbon")) {
+image.src = "images/pic_bulboff.gif";
+} else {
+image.src = "images/pic_bulbon.gif";
+}
+}
+    </script><br>
+    <br>
     </p>
     </div>
   </li>
@@ -84,6 +122,8 @@ games and see their collectors score.</span></p>
   <p>Click the button to enter your user ID.</p>
   <button onclick="myFunction()">Try it</button>
   <p id="demo"></p>
+  <div><br>
+  </div>
   <p>
   <script>
 function myFunction() {
@@ -102,7 +142,8 @@ Console Version: <input name="age" id="age"
   <br>
   </p>
   <div id="answers"></div>
-  <div id="answers"></div>
+  <div id="answers"><br>
+  </div>
   <script>
 var answerArray = [];
 (function () {
@@ -116,7 +157,8 @@ answersDiv.innerHTML = answerArray.toString();
 for (var i in elements) {
 elements[i].addEventListener('blur', addFunction);
 } }());</script>
-  <a href="#content">Return to top of page.</a>
+  <div style="text-align: center;"><a href="#header">Return
+to top of page.</a></div>
   <div id="list" class="main"></div>
   <div id="footer">
   <div>
