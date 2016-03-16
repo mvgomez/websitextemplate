@@ -164,7 +164,7 @@ body {
 	display: block;
 	left: 0;
 	position: absolute;
-	top: -112px;
+	top: -40px;
 	z-index: 1;
 }
 #body div div .section {
@@ -179,10 +179,10 @@ body {
 	float: left;
 	margin: 0 10px;
 	padding: 3px 0 0;
-	width: 220px;	
+	width: 450px;	
 }
 #body div div .section > div:first-child {
-	width: 440px;	
+	width: 450px;	
 }
 #body div div .section div h4 {
 	background: #070707 url(../images/gradient2.png) repeat-x top center;
