@@ -158,33 +158,15 @@ your user ID.</p>
  onclick="myFunction()">Try it</button>
   </div>
   <p id="demo"></p>
-  <div><br>
-  </div>
-  <p style="text-align: center;">
-  <script>
-function myFunction() {
-var username = prompt("Please enter username", "Default User");
-if (username != null) {
-document.getElementById("demo").innerHTML =
-""+ username + ", Please enter your information.";
-}
-}
-  </script>Your
-List of Games: <input name="fname" id="fname"
- type="text"> Release Dates: <input name="lname"
- id="lname" type="text"> Console Version: <input
- name="age" id="age" type="text"> <br>
-  </p>
-  <div id="answers"></div>
-  <div id="answers"><br>
-  </div>
+  <div style="text-align: center;">
   <form>
-    <h1>Please enter data</h1>
+    <h1><small>Please enter collection data:</small></h1>
     <input id="title" placeholder="Title" type="text">
     <input id="name" placeholder="Release Date"
  type="text"><input id="tickets"
  placeholder="Console Type" type="text"><input
  value="Save/Show" onclick="insert()" type="button"></form>
+  </div>
   <div id="display"></div>
   <div style="text-align: center;"><a href="#header">Return
 to top of page.</a><br>
