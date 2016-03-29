@@ -64,20 +64,20 @@ Board</a> </li>
 Top 5 leaders!</span> </p>
     <p> </p>
     <ul style="list-style-type: circle;">
-      <li><a href="userOne.html">UserOne - 54321</a></li>
-      <li><a href="userTwo.html">UserTwo - 4321</a></li>
-      <li><a href="userThree.html">UserThree - 321</a></li>
-      <li><a href="userFour.html">UserFour - 21</a></li>
-      <li><a href="userFive.html">UserFive - 1</a></li>
+      <li><a href="userOne.html">UserOne - 10,500</a></li>
+      <li><a href="userTwo.html">UserTwo - 9,000</a></li>
+      <li><a href="userThree.html">UserThree - 6,500</a></li>
+      <li><a href="userFour.html">UserFour - 6,000</a></li>
+      <li><a href="userFive.html">UserFive - 5,500</a></li>
     </ul>
     </div>
   </li>
   <li>
     <h3>Featured live streams!</h3>
-    <div id="BODY"> Click on a user to view their page
-and
+    <div id="BODY"> Click on a user to view their page and
 stream.
-    <p> </p>
+    <br>
+    <br>
     <p> <a href="userFour.html">UserOne</a>&nbsp;&nbsp;
 &nbsp; is live streaming <img id="myImage"
  onclick="changeImage()" src="images/pic_bulboff.gif"
@@ -132,15 +132,17 @@ image.src = "images/pic_bulbon3.gif";
   <li>
     <h3>Join Our Community</h3>
     <div>
-    <p> If you would like to join, click <a
- href="createuser.html">Sign Up!</a>&nbsp;<br>
-    <br>
-Here you can meet
-other
-people in the community who share the
-same interests as you</p>
+    <p> Here you can meet other people in the community who share
+the same
+interests as you.&nbsp;</p>
     </div>
   </li>
+  <div>
+  <p>If you would like to join, click <a
+ href="createuser.html">Sign Up!</a>&nbsp;<br>
+  <br>
+  </p>
+  </div>
 </ul>
 <ul>
   <h3 style="text-align: center;">Collectors Program</h3>
@@ -154,29 +156,43 @@ games, release dates, and console versions to see your score.</span></p>
   </p>
   <p style="text-align: center;">Click the button to enter
 your user ID.</p>
+  <br>
   <div style="text-align: center;"><button
  onclick="myFunction()">Try it</button>
   </div>
   <p id="demo"></p>
+  <script>
+function myFunction() {
+var person = prompt("Please enter your user name", "Default User");
+if (person != null) {
+document.getElementById("demo").innerHTML =
+"Hello " + person + "! Please enter your information.";
+}
+}
+  </script>
   <div style="text-align: center;">
   <form>
-    <h1><small>Please enter collection data:</small></h1>
+    <div style="text-align: center;"></div>
+    <h1 style="text-align: center;"><small><small>Please
+enter collection data:</small></small></h1>
     <input id="title" placeholder="Title" type="text">
     <input id="name" placeholder="Release Date"
  type="text"><input id="tickets"
  placeholder="Console Type" type="text"><input
  value="Save/Show" onclick="insert()" type="button"></form>
   </div>
+  </div>
   <div id="display"></div>
+  <br>
   <div style="text-align: center;"><a href="#header">Return
 to top of page.</a><br>
   </div>
+  <br>
   <p style="text-align: center;"></p>
   <p style="text-align: center;"><a
  href="JavaScript:window.print();">Print this
 page</a></p>
-  <div class="more-info">
-  </div>
+  <div class="more-info"> </div>
   <div id="list" class="main"></div>
   <div id="footer">
   <div>
@@ -192,7 +208,6 @@ page</a></p>
     </li>
   </ul>
   <p> @ copyright 2016. all rights reserved. </p>
-  </div>
   </div>
   </div>
 </ul>
@@ -227,11 +242,11 @@ tickets.push( ticketInput.value );
 clearAndShow();
 }
 function clearAndShow () {
-// Clear our fields
+// Clear fields
 titleInput.value = "";
 nameInput.value = "";
 ticketInput.value = "";
-// Show our output
+// Show output
 messageBox.innerHTML = "";
 messageBox.innerHTML += "Titles: " + titles.join(", ") + "<br/>";
 messageBox.innerHTML += "Release Dates: " + names.join(", ") + "<br/>";
