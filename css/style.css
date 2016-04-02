@@ -818,12 +818,12 @@ body {
         }
  
         .tab-links a:hover {
-            background:#a7cce5;
+            background:#F5A9BC;
             text-decoration:none;
         }
  
     li.active a, li.active a:hover {
-        background:#fff;
+        background:#F5A9BC;
         color:#4c4c4c;
     }
  
@@ -859,7 +859,7 @@ body {
                 padding:9px 15px;
                 display:inline-block;
                 border-radius:3px 3px 0px 0px;
-                background:#7FB5DA;
+                background:#F5A9BC;
                 font-size:16px;
                 font-weight:600;
                 color:#4c4c4c;
